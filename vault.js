@@ -15,9 +15,10 @@ module.exports = function() {
       return null;
     }
   }
-  
+
   return{
     setValue: setValue,
     getValue: getValue
   }
 };
+;
