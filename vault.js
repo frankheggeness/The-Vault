@@ -7,6 +7,7 @@ module.exports = function() {
     }
       myVault.key = value;
   }
+
   function getValue(key){
     if(myVault.key){
       return myVault.key;
@@ -14,9 +15,9 @@ module.exports = function() {
       return null;
     }
   }
+  
   return{
     setValue: setValue,
     getValue: getValue
-    
   }
 };
