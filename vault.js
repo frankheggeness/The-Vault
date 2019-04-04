@@ -1,24 +1,24 @@
-'use strict';
+"use strict";
 module.exports = function() {
   let myVault = {};
-  function setValue(key,value){
-    if(!key || !value){
+
+  function setValue(key, value) {
+    if (!key || !value) {
       return null;
     }
-      myVault.key = value;
+    myVault.key = value;
   }
 
-  function getValue(key){
-    if(myVault.key){
+  function getValue(key) {
+    if (myVault.key) {
       return myVault.key;
-    }else{
+    } else {
       return null;
     }
   }
 
-  return{
+  return {
     setValue: setValue,
     getValue: getValue
-  }
+  };
 };
-;
